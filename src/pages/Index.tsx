@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { EncryptedScoreCard } from "@/components/EncryptedScoreCard";
 import { AchievementMeter } from "@/components/AchievementMeter";
+import { UploadRecordModal } from "@/components/UploadRecordModal";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap, BookOpen, Award, Shield } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.png";
@@ -79,7 +80,10 @@ const Index = () => {
 
         {/* Encrypted Scores Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-foreground">Encrypted Learning Records</h2>
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-foreground">Encrypted Learning Records</h2>
+            <UploadRecordModal />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <EncryptedScoreCard 
               subject="Advanced Cryptography"

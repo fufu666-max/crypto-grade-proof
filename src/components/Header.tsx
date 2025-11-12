@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Wallet } from "lucide-react";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import logo from "@/assets/learncrypt-logo.png";
 
 export const Header = () => {
@@ -13,10 +12,7 @@ export const Header = () => {
             <p className="text-xs text-muted-foreground">Learn in Privacy. Prove in Public.</p>
           </div>
         </div>
-        <Button variant="wallet" size="lg" className="gap-2">
-          <Wallet className="h-5 w-5" />
-          Connect Rainbow Wallet
-        </Button>
+        <ConnectButton />
       </div>
     </header>
   );
