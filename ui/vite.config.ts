@@ -17,6 +17,22 @@ export default defineConfig(({ mode }) => ({
     },
   },
   optimizeDeps: {
-    include: ["idb"],
+    include: ["idb", "ethers"],
+    esbuildOptions: {
+      resolveExtensions: [".ts", ".tsx", ".js", ".jsx"],
+    },
+  },
+  build: {
+    commonjsOptions: {
+      include: [/types/, /node_modules/],
+      transformMixedEsModules: true,
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          ethers: ["ethers"],
+        },
+      },
+    },
   },
 }));
