@@ -6,9 +6,9 @@ ui/node_modules
 artifacts
 cache
 coverage
-types
 dist
 ui/dist
+# Note: types directory is needed for build, so it's not ignored
 
 # Hardhat files
 fhevmTemp
