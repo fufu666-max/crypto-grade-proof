@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Graduation Cap -->
+  <path d="M32 8L12 20L32 32L52 20L32 8Z" fill="hsl(var(--primary))" stroke="hsl(var(--primary))" stroke-width="1"/>
+  <path d="M12 20V40L32 52L52 40V20" fill="none" stroke="hsl(var(--primary))" stroke-width="2"/>
+  <!-- Key -->
+  <circle cx="45" cy="35" r="4" fill="hsl(var(--accent))" stroke="hsl(var(--accent))" stroke-width="1"/>
+  <rect x="42" y="35" width="8" height="3" rx="1" fill="hsl(var(--accent))"/>
+  <rect x="48" y="33" width="2" height="7" rx="1" fill="hsl(var(--accent))"/>
+</svg>
+
