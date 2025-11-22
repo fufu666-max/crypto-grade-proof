@@ -52,5 +52,7 @@ LICENSE
 .solcover.js
 tsconfig.json
 hardhat.config.ts
+# Note: Keep ui/package-lock.json for npm ci to work
 package-lock.json
+!ui/package-lock.json
 
